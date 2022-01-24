@@ -1,0 +1,73 @@
+/* CSS STYLE 
+
+Copyright Manon Schmitt 2022
+###############################
+##################
+############
+*/
+
+/* dark theme or light theme | CSS */
+
+:root
+{
+    --body-background-color:#443b55;
+    --body-text-color:#000000;
+    --button-color-button-background-color:#000000;
+}
+
+/* dark theme ! */
+@media(prefers-color-scheme:dark)
+{
+    :root
+    {
+        --body-background-color: #000000;
+        --body-text-color:#000000;
+        --button-color-button-background-color:#f1f1f1;
+        --text-color-button-background-color:#040404;
+    }
+
+}
+.gray-accent
+{
+    background-color:var(--body-background-color);
+    color:var(--body-text-color);
+}
+
+.color-buttom
+{
+    background-color:var(--button-color-button-background-color);
+    color:var(--body-text-color);
+}
+
+/* light theme ! */
+
+@media(prefers-color-scheme:light)
+{
+    :root
+    {
+        --body-background-color:#443b55;
+        --body-text-color:#000000;
+        --button-color-button-background-color:#f1f1f1;
+        --text-color-button-background-color:#040404;
+    }
+
+}
+.gray-accent
+{
+    background-color:var(--body-background-color);
+    color:var(--body-text-color);
+}
+
+.color-buttom
+{
+    background-color:var(--button-color-button-background-color);
+    color:var(--text-color-button-background-color);
+}
+
+/* CSS STYLE
+
+Copyright Manon Schmitt 2022
+###############################
+##################
+############
+*/

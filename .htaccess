@@ -1,0 +1,19 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:maxime-marteel.fr
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?maxime-marteel.fr
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+# DO NOT REMOVE THIS LINE AND THE LINES BELLOW SSL_REDIRECT:maxime-marteel.fr
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
